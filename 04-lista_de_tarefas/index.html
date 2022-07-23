@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="asset/style.css">
+    <script src="asset/script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>LISTA DE TAREFAS</h1>
+    </header>
+    <div class="header">
+        <div class="boxHeader">
+            <label for="work">O que fazer?</label>
+            <input type="text" id="work" value="" required>
+        </div>
+        <div class="boxHeader">
+            <label for="listWeek">Qual dia da semana?</label>
+            <select name="selectWeek" id="listWeek" class="boxSelection">
+                <option value="" >Selecione o dia da semana</option>
+                <option value="sunday">Domingo</option>
+                <option value="monday">Segunda</option>
+                <option value="tuesday">Terça</option>
+                <option value="wednesday">Quarta</option>
+                <option value="thurday">Quinta</option>
+                <option value="friday">Sexta</option>
+                <option value="satunday">Sábado</option>
+            </select>
+        </div>
+        <button type="submit" id="save" onclick="caching()">Cadastrar</button>
+    </div>
+    
+    <div class="box">
+        <h2>Lista de atividades na semana</h2>
+        <div class="boxWeek">
+            <div class="weekDay" id="sunday">
+                <h2>Domingo</h2>
+            </div>
+            <div class="weekDay" id="monday">
+                <h2>Segunda</h2>
+            </div>
+            <div class="weekDay" id="tuesday">
+                <h2>Terça</h2>
+            </div>
+            <div class="weekDay" id="wednesday">
+                <h2>Quarta</h2>
+            </div>
+            <div class="weekDay" id="thurday">
+                <h2>Quinta</h2>
+            </div>
+            <div class="weekDay" id="friday">
+                <h2>Sexta</h2>
+            </div>
+            <div class="weekDay" id="satunday">
+                <h2>Sábado</h2>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

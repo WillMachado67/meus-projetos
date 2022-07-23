@@ -1,0 +1,63 @@
+body {
+    background-color: #bfcdcf;
+}
+h1{
+    margin: 8px;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items:center;
+    flex: 1 1 320px;
+    height: 20px;
+    padding-bottom: 30px;
+}
+
+.header input, select{
+    display: block;
+}
+
+.boxSelection {
+    padding: 2px;
+}
+
+.boxHeader{
+    margin: 4px;
+}
+
+.box {
+    padding-top: 8px;
+    border-top-style: dashed;
+    margin: 8px
+}
+
+h2 {
+    font-size: 13px;
+}
+
+button {
+    padding: 4px;
+    background-color: blue;
+    color: white;
+    border-radius: 5px 5px;
+    border-style: none;
+    margin: 16px 0px 0px 8px;
+}
+
+.boxWeek {
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)) ;
+    gap: 20px;
+}
+
+.weekDay {
+    padding: 0px 8px;
+    text-align: left;
+    background-color: white;
+    min-height: 200px;   
+}
+
